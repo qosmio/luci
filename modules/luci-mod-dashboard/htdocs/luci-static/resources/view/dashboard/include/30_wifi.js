@@ -221,7 +221,7 @@ return baseclass.extend({
 						hostname : {
 							title: _('Hostname'),
 							visible: true,
-							value: name || '?'
+							value: name.replace(".ate.cx","") || '?'
 						},
 
 						ssid : {

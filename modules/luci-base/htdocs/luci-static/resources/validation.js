@@ -565,7 +565,7 @@ var ValidatorFactory = baseclass.extend({
 		},
 
 		hexstring: function() {
-			return this.assert(this.value.match(/^([a-f0-9][a-f0-9]|[A-F0-9][A-F0-9])+$/),
+			return this.assert(this.value.split(':').join('').match(/^([a-f0-9][a-f0-9]|[A-F0-9][A-F0-9])+$/),
 				_('hexadecimal encoded value'));
 		},
 
