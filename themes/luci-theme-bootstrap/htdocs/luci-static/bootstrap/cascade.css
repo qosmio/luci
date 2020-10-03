@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Hack';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hack'), local('Hack'), url(/luci-static/resources/fonts/hack-regular-subset.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(/luci-static/resources/fonts/roboto-regular-subset.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(/luci-static/resources/fonts/roboto-medium-subset.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(/luci-static/resources/fonts/roboto-bold-subset.woff2) format('woff2');
+}
 /*!
  * LuCI Bootstrap Theme
  * Copyright 2012 Nut & Bolt
@@ -129,7 +153,7 @@ textarea {
  * ------------------------------------------------------------------------------------------- */
 body {
 	background-color: #fff;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 18px;
@@ -140,7 +164,7 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 940px;
+	max-width: 970px;
 	margin-left: auto;
 	margin-right: auto;
 	zoom: 1;
@@ -339,9 +363,9 @@ address {
 	margin-bottom: 18px;
 }
 
-code, pre {
+.CodeMirror pre.CodeMirror-line, .CodeMirror pre.CodeMirror-line-like, code, pre, textarea {
 	padding: 0 3px 2px;
-	font-family: Monaco, Andale Mono, Courier New, monospace;
+	font-family: Hack, Monaco, Andale Mono, Courier New, monospace!important;
 	font-size: 12px;
 	border-radius: 3px;
 }
@@ -415,7 +439,7 @@ input,
 button,
 select,
 textarea {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: normal;
@@ -1247,7 +1271,7 @@ body.modal-overlay-active #modal_overlay {
 }
 
 .btn .close, .alert-message .close {
-	font-family: Arial, sans-serif;
+	font-family: "Roboto","Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 18px;
 }
 
@@ -1778,10 +1802,10 @@ button.btn::-moz-focus-inner, input[type=submit].btn::-moz-focus-inner {
 
 .label,
 header [data-indicator] {
-	padding: 1px 3px 2px;
-	font-size: 9.75px;
+	padding: 2px 6px 2px 6px;
+	font-size: 9.85px;
 	font-weight: bold;
-	color: #fff !important;
+	color: #040303 !important;
 	text-transform: uppercase;
 	white-space: nowrap;
 	background-color: #bfbfbf;
@@ -1804,7 +1828,7 @@ a.label:hover {
 }
 
 .label.important {
-	background-color: #c43c35;
+	background-color: #ea4c44;
 }
 
 .label.warning {
@@ -1812,7 +1836,7 @@ a.label:hover {
 }
 
 .label.success {
-	background-color: #46a546;
+	background-color: #52cc52;
 }
 
 .label.notice,
@@ -1826,6 +1850,7 @@ header [data-indicator][data-style="active"] {
 form.inline { display: inline; margin-bottom: 0; }
 
 header .pull-right { padding-top: 8px; }
+#indicators.pull-right { position: absolute; right: 10px; }
 
 #modemenu li:last-child span.divider { display: none }
 
@@ -2131,7 +2156,7 @@ div.cbi-value var.cbi-tooltip-container,
 .uci-change-legend-label ins,
 .uci-change-legend-label var {
 	text-decoration: none;
-	font-family: monospace;
+	font-family: Hack, monospace;
 	font-style: normal;
 	border: 1px solid #ccc;
 	background: #eee;
