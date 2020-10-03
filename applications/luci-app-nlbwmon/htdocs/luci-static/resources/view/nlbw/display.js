@@ -294,7 +294,7 @@ return view.extend({
 		dns = dns.split('.')[0];
 
 		if (dns.length > 12)
-			return '<span title="%q">%h…</span>'.format(dns, dns.substr(0, 12));
+			return '<span title="%q">%h</span>'.format(dns, dns.substr(0, 17));
 
 		return '%h'.format(dns);
 	},

@@ -52,13 +52,15 @@ return view.extend({
 			E('h5', [ _('Restore Database Backup') ]),
 			E('p', [
 				E('button', {
-					'click': ui.createHandlerFn(this, 'handleArchiveUpload')
+					'click': ui.createHandlerFn(this, 'handleArchiveUpload'),
+					'class': 'cbi-button cbi-button-negative important'
 				}, [ _('Restore') ])
 			]),
 			E('h5', [ _('Download Database Backup') ]),
 			E('p', [
 				E('button', {
-					'click': ui.createHandlerFn(this, 'handleArchiveDownload', hostname)
+					'click': ui.createHandlerFn(this, 'handleArchiveDownload', hostname),
+					'class': 'cbi-button cbi-button-action important'
 				}, [ _('Generate Backup') ])
 			])
 		]);
