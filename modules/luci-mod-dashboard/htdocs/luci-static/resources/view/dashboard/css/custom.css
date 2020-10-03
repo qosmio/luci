@@ -20,7 +20,7 @@
 }
 
 .Dashboard .box-s1 {
-    min-height: 466px;
+    min-height: 360px;
 }
 
 .Dashboard .internet-status-self .internet-status-info .title {
@@ -118,13 +118,12 @@
 }
 
 .Dashboard .settings-info p span:nth-child(2){
-    display: inline-block;
     word-break: break-all;
     max-width: 150px;
     overflow: hidden;
     max-height: 16px;
     position: relative;
-    top:2px;
+    top: 2px;
 }
 
 .Dashboard .router-status-info .settings-info p span:nth-child(2){
@@ -148,7 +147,7 @@
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td {
-    padding: 0 10px 0 10px;
+    padding: 0px 0 0 10px;
 }
 
 .Dashboard .router-status-wifi .wifi-info .devices-info .tr .td:first-child {
@@ -190,6 +189,15 @@
 
 .Dashboard .wifi-info .devices-info .table-titles {
     border-bottom:1px solid rgba(0,0,0,.1);
+}
+
+.progress-bar {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+    height: 20px;
+    margin: 4px 0;
+    background: #4dd4ea;
 }
 
 /**
